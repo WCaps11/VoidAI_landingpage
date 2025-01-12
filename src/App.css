@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+  font-size: 16px;
+  color: blanchedalmond ;
+  font-family: 'Exo 2', sans-serif ;
+  transition : .2s;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body{
+  background-color: #282c34 ;
+ 
+}
+
+
+
+.container-main{
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  ;
+}
+
+.ascii{
+  font-family: monospace;
+  white-space: pre;
+}
+
+.banner{
+  height: 90vh;
+ 
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+
+
+.header{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+.consolebox{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+;
+
+}
+
+
+.consoleoutput{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.consoleprompt{
+
+  margin-top: 12px;
+}
+
+.px-1{
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.px-2{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.px-3{
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+
+.consoleline-title{
+  display: flex;
+
+}
+
+.consoleline-title > div:first-child{
+  color: rgba(255, 242, 205, 0.76);
+  width: 120px;
+}
+
+.consolebox input{
+  background-color: transparent;
+  border: none;
+
+  caret: 5px;
+  caret-shape: bar;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.d-flex{
+  display: flex;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.linkscontainer{
+  display: grid;
+  gap :12px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
