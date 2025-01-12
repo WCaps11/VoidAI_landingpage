@@ -7,16 +7,23 @@ export default class ConsoleLine_Help extends Component {
   render() {
     return (
       <>
-               <ConsoleLine_Prompt message="guest@voidAI.com:-> help"/>
+    
                     <br/>
 
                     <div className='px-3'>
-                    <ConsoleLine title="voidinfo" message="What is Void AI" />
-        <ConsoleLine title="why" message="Why Void AI" />
-        <ConsoleLine title="link" message="display links"/>
-
-        <ConsoleLine title="clear" message="clear console"/>
-
+                    <ConsoleLine title="what" message="What is Void AI" />
+                    <ConsoleLine title="why" message="Why Void AI" />
+                    <ConsoleLine title="tokenomics" message="Tokenomics"/>
+                    <ConsoleLine title="howtobuy" message="How to Buy"/>
+                    <ConsoleLine title="socials" message="Social Media links"/>
+                    <ConsoleLine title="buy" message="Buy"/>
+                    <ConsoleLine title="roadmap" message="View Roadmap"/>
+                    <ConsoleLine title="clear" message="clear console"/>
+                    <ConsoleLine message="  "/>
+                    <ConsoleLine message="Features:"/>
+                    <ConsoleLine message="Terminal Game - Coming Soon"/>
+                    <ConsoleLine message="ChatBox - Coming Soon"/>
+                    <ConsoleLine message="ChatAI - Coming Soon"/>
 
 
                     </div>

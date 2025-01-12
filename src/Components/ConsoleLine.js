@@ -45,7 +45,7 @@ export default function ConsoleLine(props) {
   }else{
 
     return(
-      <div>{outputmessage} </div>
+      <div>{outputmessage} &nbsp;</div>
 
     )
       

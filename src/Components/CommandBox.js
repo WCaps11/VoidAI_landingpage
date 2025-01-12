@@ -8,10 +8,12 @@ import Banner_SlantRelief from './Banner_SlantRelief'
 import ConsoleLine_Prompt from './ConsoleLine_Prompt'
 import { useState , useEffect } from 'react'
 import ConsoleLine_Links from './ConsoleLine_Links'
+import ConsoleLine_Why from './ConsoleLine_Why'
+import ConsoleLine_What from './ConsoleLine_What'
 
 export default function CommandBox() {
 
-  const voidinfo = "Void Terminal AI is an innovative AI-powered terminal designed for seamless interactions with ChatBox and chatAI within the Sui Network ecosystem. "+
+  const what = "Void Terminal AI is an innovative AI-powered terminal designed for seamless interactions with ChatBox and chatAI within the Sui Network ecosystem. "+
                    "It offers advanced conversational capabilities, intuitive integration, and enhanced user engagement for decentralized applications (dApps). "+
                    "Leveraging the power of Sui's scalability, Void Terminal AI ensures fast, secure, and reliable communication, making it ideal for Web3 projects."
 
@@ -34,6 +36,20 @@ export default function CommandBox() {
       setInputValue(event.target.value);
   };
 
+
+  const goTwitter= ()=>{
+    const timer = setTimeout(() => {
+      window.open("https://x.com/?lang=en&mx=2", "_blank"); // Opens the URL in a new tab
+    }, 3000);
+  }
+
+
+  const goTelegram= ()=>{
+    const timer = setTimeout(() => {
+      window.open("https://web.telegram.org", "_blank"); // Opens the URL in a new tab
+    }, 3000);
+  }
+
   const handleKeyPress = (event) => {
 
 
@@ -42,10 +58,21 @@ export default function CommandBox() {
         if(inputvalue.trim() == "clear"){
           setActions([""]);
         }else{
-          setActions((prevItems) => [...prevItems, inputvalue.trim()]);
+          setActions([inputvalue.trim()]);
+     //     setActions((prevItems) => [...prevItems, inputvalue.trim()]);
+
+          if(inputvalue.toLowerCase().trim() === "twitter"){
+              goTwitter();
+          }else if(inputvalue.toLowerCase().trim() === "telegram"){
+              goTelegram();
+          }
         }
         setActionHistory((prevItems2) => [...prevItems2, inputvalue.trim()]);
         setHistoryIndex(actionhistory.length +1)
+
+
+
+
         setInputValue("");
      
       }
@@ -92,19 +119,24 @@ export default function CommandBox() {
         
         <div className='consoleoutput'> 
 
+        <ConsoleLine_Intro />
+        <ConsoleLine_Help />
+
         {actions.map((item ,key) => (
-      
-              item === "intro" ? (
-                <ConsoleLine_Intro key={key}/>
-              ) : item === "help" ? (
-                <ConsoleLine_Help key={key} />
-              ) : item === "voidinfo" ? (
-                <ConsoleLine_Multiline key={key} content={voidinfo}/>
-              ) : item === "why" ? (
-                <ConsoleLine_Multiline key={key} content={why}/>
-              ) : item === "link" ? (
-                <ConsoleLine_Links key={key}/>
-              ) : item !== "" ? (
+
+              item.toLowerCase() === "what" ? (
+                <ConsoleLine_What key={key} content={what} command={item}/>
+              ) : item.toLowerCase() === "why" ? (
+                <ConsoleLine_Why key={key} content={why} command={item}/>
+              ) :item.toLowerCase() === "roadmap" ? (
+                <ConsoleLine_Multiline key={key} content={"roadmap"} command={item}/>
+              ) : item.toLowerCase() === "socials" ? (
+                <ConsoleLine_Links key={key} command={item}/>
+              ) : item.toLowerCase() === "twitter" ? (
+                <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
+              ) : item.toLowerCase() === "telegram" ? (
+                <ConsoleLine_Multiline key={key} content={"Opening...... Telegram"} command={item}/>
+              ) :item.toLowerCase() !== "" ? (
                 <ConsoleLine_Unknown command={item}/>
               ) :    
               (
@@ -112,9 +144,6 @@ export default function CommandBox() {
               )
 
         ))}
-  
-
-          
 
         </div>
 

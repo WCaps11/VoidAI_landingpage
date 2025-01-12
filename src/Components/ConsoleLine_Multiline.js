@@ -3,7 +3,7 @@ import ConsoleLine from './ConsoleLine'
 import ConsoleLine_Prompt from './ConsoleLine_Prompt'
 
 
-export default function ConsoleLine_Multiline({content}) {
+export default function ConsoleLine_Multiline({content ,  command}) {
 
   const inputArray = (content || '').split('\n')
   const [outputArray , setArray] = useState([]);
@@ -31,10 +31,11 @@ export default function ConsoleLine_Multiline({content}) {
   },[waiting]);
 
 
+  const prompt = "guest@voidAI.com:->" + command
 
   return (
     <>
-      <ConsoleLine_Prompt message="guest@voidAI.com:-> voidinfo"/>
+      <ConsoleLine_Prompt message={prompt}/>
       <br/>
    <div className='px-3'>
 

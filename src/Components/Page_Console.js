@@ -12,7 +12,7 @@ export default function Page_Console() {
     thesound.loop = true; 
 
     const Playsound = ()=>{
-      thesound.play()
+      //thesound.play()
 
     };
 
