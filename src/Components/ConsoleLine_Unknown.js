@@ -12,7 +12,7 @@ export default class ConsoleLine_Unknown extends Component {
               <ConsoleLine_Prompt message={"guest@voidAI.com:->" + temp} />
    
             <ConsoleLine message= {temp} / >
-            <ConsoleLine message='For a list of available commands, type "help"' />
+            <ConsoleLine message='For a list of available commands' />
         
         
             <br/>
