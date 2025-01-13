@@ -43,7 +43,7 @@ export default function ConsoleLine_What({content ,  command}) {
        <ConsoleLine_Prompt message={prompt}/>
        <br/>
           <div className='px-3'>
-                <ConsoleLine message={"============================================ "} />  
+                <ConsoleLine message={"================================================================================================================================================= "} />  
                               <br/> 
                 <ConsoleLine_Prompt message={"What is Void Terminal AI?"}/>
                 <br/> 
@@ -51,7 +51,7 @@ export default function ConsoleLine_What({content ,  command}) {
                 <ConsoleLine message={what2} />   
                 <ConsoleLine message={what3} />  
                 <br/>
-                <ConsoleLine message={"============================================ "} />  
+                <ConsoleLine message={"================================================================================================================================================= "} />  
 
 
                 
