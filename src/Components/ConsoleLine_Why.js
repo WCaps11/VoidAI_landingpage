@@ -40,13 +40,13 @@ export default function ConsoleLine_Why({content ,  command}) {
        <ConsoleLine_Prompt message={prompt}/>
        <br/>
           <div className='px-3'>
-                <ConsoleLine message={"============================================ "} />  
+                <ConsoleLine message={"========================================================================================================================= "} />  
                               <br/> 
                 <ConsoleLine_Prompt message={"Why Void Terminal AI?"}/>
                 <br/> 
                 <ConsoleLine message={why1} />     <ConsoleLine message={why2} />  
                 <br/>
-                <ConsoleLine message={"============================================ "} />  
+                <ConsoleLine message={"========================================================================================================================= "} />  
           </div>
  
        <br/>
