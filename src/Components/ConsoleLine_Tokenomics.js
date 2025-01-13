@@ -43,11 +43,11 @@ export default function ConsoleLine_Tokenomics({content ,  command}) {
 
                   <ConsoleLine_Prompt message={"Tokenomics"}/>
                   <br/> 
-                  <ConsoleLine message={"Name/Ticker: Void Terminal AI / $VOIDAI"} />     
-                  <ConsoleLine message={"Total Supply: 10,000,000,000 $VOIDAI"} />  
-                  <ConsoleLine message={"Liquidity Pool: Burned LP"} />  
-                  <ConsoleLine message={"Taxes: 0% Percent"} />  
-                  <ConsoleLine message={"Marketing: Dex, Giveaway, Boost Etc."} />  
+                  <ConsoleLine message={"Name/Ticker: Void Terminal AI / $VOIDAI"} /><br/>    
+                  <ConsoleLine message={"Total Supply: 10,000,000,000 $VOIDAI"} /><br/>   
+                  <ConsoleLine message={"Liquidity Pool: Burned LP"} /><br/>   
+                  <ConsoleLine message={"Taxes: 0% Percent"} /><br/>   
+                  <ConsoleLine message={"Marketing: Dex, Giveaway, Boost Etc."} /><br/>   
                   <br/>
                   <ConsoleLine message={"============================================ "} />  
             </div>
