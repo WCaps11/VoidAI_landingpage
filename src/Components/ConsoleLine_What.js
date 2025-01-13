@@ -10,6 +10,12 @@ export default function ConsoleLine_What({content ,  command}) {
       const [initialized , setInitial] = useState(false);
     
 
+
+
+      const what1 = "   Void Terminal AI is an innovative AI-powered terminal designed for seamless interactions with ChatBox and chatAI within the Sui Network ecosystem."
+      const what2 = "    It offers advanced conversational capabilities, intuitive integration, and enhanced user engagement for decentralized applications (dApps)."
+      const what3 = "    Leveraging the power of Sui's scalability, Void Terminal AI ensures fast, secure, and reliable communication, making it ideal for Web3 projects."
+
         useEffect(()=>{
        
       
@@ -36,13 +42,20 @@ export default function ConsoleLine_What({content ,  command}) {
      <>
        <ConsoleLine_Prompt message={prompt}/>
        <br/>
-    <div className='px-3'>
- 
- 
-        {outputArray.map((item ,key) => (
-           <ConsoleLine message={item} key={key}/>
-             ))}
-    </div>
+          <div className='px-3'>
+                <ConsoleLine message={"============================================ "} />  
+                              <br/> 
+                <ConsoleLine_Prompt message={"What is Void Terminal AI?"}/>
+                <br/> 
+                <ConsoleLine message={what1} />      
+                <ConsoleLine message={what2} />   
+                <ConsoleLine message={what3} />  
+                <br/>
+                <ConsoleLine message={"============================================ "} />  
+
+
+                
+          </div>
  
        <br/>
      </>

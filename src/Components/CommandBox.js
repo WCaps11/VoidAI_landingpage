@@ -10,23 +10,19 @@ import { useState , useEffect } from 'react'
 import ConsoleLine_Links from './ConsoleLine_Links'
 import ConsoleLine_Why from './ConsoleLine_Why'
 import ConsoleLine_What from './ConsoleLine_What'
+import ConsoleLine_Tokenomics from './ConsoleLine_Tokenomics'
+import ConsoleLine_Howtobuy  from './ConsoleLine_Howtobuy'
 
 export default function CommandBox() {
 
-  const what = "Void Terminal AI is an innovative AI-powered terminal designed for seamless interactions with ChatBox and chatAI within the Sui Network ecosystem. "+
-                   "It offers advanced conversational capabilities, intuitive integration, and enhanced user engagement for decentralized applications (dApps). "+
-                   "Leveraging the power of Sui's scalability, Void Terminal AI ensures fast, secure, and reliable communication, making it ideal for Web3 projects."
-
-
-  const why = "Void Terminal AI provides immense utility by enhancing user interaction and automation within the Sui Network ecosystem. It simplifies complex processes through conversational AI, making dApps more accessible and user-friendly. "+
-              "By integrating with smart contracts, it enables seamless task execution, reduces barriers to entry, and fosters innovation, scalability, and engagement for Web3 projects."
-  
 
 
 
 
 
-  const [actions, setActions] = useState(["intro"]);
+
+
+  const [actions, setActions] = useState([""]);
   const [actionhistory, setActionHistory] = useState([]);
   const [historyindex, setHistoryIndex] = useState(0);
   const [inputvalue, setInputValue] =  useState("");
@@ -125,17 +121,21 @@ export default function CommandBox() {
         {actions.map((item ,key) => (
 
               item.toLowerCase() === "what" ? (
-                <ConsoleLine_What key={key} content={what} command={item}/>
+                <ConsoleLine_What key={key}  command={item}/>
               ) : item.toLowerCase() === "why" ? (
-                <ConsoleLine_Why key={key} content={why} command={item}/>
+                <ConsoleLine_Why key={key} command={item}/>
               ) :item.toLowerCase() === "roadmap" ? (
                 <ConsoleLine_Multiline key={key} content={"roadmap"} command={item}/>
               ) : item.toLowerCase() === "socials" ? (
                 <ConsoleLine_Links key={key} command={item}/>
               ) : item.toLowerCase() === "twitter" ? (
                 <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
-              ) : item.toLowerCase() === "telegram" ? (
-                <ConsoleLine_Multiline key={key} content={"Opening...... Telegram"} command={item}/>
+              ) : item.toLowerCase() === "twitter" ? (
+                <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
+              ) :item.toLowerCase() === "tokenomics" ? (
+                <ConsoleLine_Tokenomics key={key}  command={item}/>
+              ) :item.toLowerCase() === "howtobuy" ? (
+                <ConsoleLine_Howtobuy key={key}  command={item}/>
               ) :item.toLowerCase() !== "" ? (
                 <ConsoleLine_Unknown command={item}/>
               ) :    

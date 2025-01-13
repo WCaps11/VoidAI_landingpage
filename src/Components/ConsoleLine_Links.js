@@ -22,10 +22,6 @@ export default function ConsoleLine_Links({command}) {
                         <a  href='https://web.telegram.org' target='_blank'>telegram</a>
 
                     </div>
-                    
-
-                    
-
                 </div>
          
 
