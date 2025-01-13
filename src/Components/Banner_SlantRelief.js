@@ -19,7 +19,7 @@ export default class Banner_SlantRelief extends Component {
               <ConsoleLine ascii message="      _____\//\\\\\__\//\\\__/\\\__\/\\\_\/\\\__\/\\\___\/\\\_______\/\\\_____\/\\\_____" />
               <ConsoleLine ascii message="       ______\//\\\____\///\\\\\/___\/\\\_\//\\\\\\\/\\__\/\\\_______\/\\\__/\\\\\\\\\\\_" />
               <ConsoleLine ascii message="        _______\///_______\/////_____\///___\///////\//___\///________\///__\///////////_" /><br/>
-              <ConsoleLine ascii message="                           2025 | Void Terminal AI, All Rights Reserved"/>
+              <ConsoleLine ascii message="                             Void Terminal AI, All Rights Reserved"/>
 
             
           </div>
