@@ -7,7 +7,7 @@ export default class ConsoleLine_Intro extends Component {
       <>
 
 <ConsoleLine message='Welcome to Void Terminal AI.' />
-<ConsoleLine message='For a list of available commands, type "help"' />
+<ConsoleLine message='For a list of available commands' />
         
       </>
     )
