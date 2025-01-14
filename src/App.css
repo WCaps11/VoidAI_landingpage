@@ -37,6 +37,16 @@ body{
   ;
 }
 
+
+.loadingbanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 30px;
+  align-items:  center;
+}
+
 .ascii{
   font-family: monospace;
   white-space: pre;
@@ -50,6 +60,10 @@ body{
   flex-direction: column;
   justify-content: center;
   
+}
+
+.bannerscale{
+  transform: scale(.8);
 }
 
 

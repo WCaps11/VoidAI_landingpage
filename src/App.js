@@ -9,27 +9,10 @@ function App() {
   const [showStarting, setShowStarting] = useState(true);
 
 
-
-
-
-
-
-
-
-  useEffect(() => {
-    // Set a timeout to switch to Page_Console after 2 seconds
-    const timer = setTimeout(() => {
-      setShowStarting(false); // Switch to Page_Console after 2 seconds
-    }, 2000);
-
-    // Cleanup the timeout on component unmount
-    return () => clearTimeout(timer);
-  }, []);
-
   
   return (
     <div className="App">
-      {showStarting ? <Page_Starting /> : <Page_Console />}
+      {showStarting ? <Page_Starting setShowStartingHandler = {setShowStarting} /> : <Page_Console />}
     </div>
   );
 }
