@@ -24,6 +24,7 @@ body{
 
   display: flex;
   flex-direction: column;
+  position: relative;
 
 }
 
@@ -95,7 +96,8 @@ body{
 
 
 .consoleprompt{
-
+  display: flex;
+  flex-direction: row;
   margin-top: 12px;
 }
 
@@ -179,6 +181,18 @@ input:focus {
   opacity: 1;
 }
 
+
+.blackhole2{
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+
+}
+
+
+
 .blackhole img{
   height: 100vh;
   width: 100vw;
@@ -188,10 +202,74 @@ input:focus {
   opacity: 0;
 }
 
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 100vh;
+  width: 100vh;
+
+
+}
+
+.consolewindow{
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  display: block;
+  background-color: #444955f3;
+  border-radius: 12px;
+  border: 1px solid blanchedalmond;
+  overflow: hidden;
+  box-shadow: -5px -6px 7px 2px rgba(255,255,255,0.1) inset;
+  -webkit-box-shadow: -5px -6px 7px 2px rgba(255,255,255,0.1) inset;
+  -moz-box-shadow: -5px -6px 7px 2px rgba(255,255,255,0.1) inset;
+
+}
+
+.consoleheader{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid blanchedalmond;;
+  margin-bottom: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+
+.consoleheader img{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.consoleheader img:hover{
+  transform: scale(1.05)
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+@media screen and (max-width: 820px) {
+  /* Your CSS rules go here */
+  .slantrelief{
+    transform: scale(.5);
+  }
+}
+
+
+
 
 

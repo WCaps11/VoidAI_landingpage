@@ -8,17 +8,13 @@ export default class Banner_SlantRelief extends Component {
      <div className='header'>
 
         <div>
-        <div className='banner'>
+        <div className='banner slantrelief'>
     
-              <ConsoleLine ascii message="__/\\\________/\\\_________________________/\\\_______/\\\\\\\\\_____/\\\\\\\\\\\_" />
-              <ConsoleLine ascii message=" _\/\\\_______\/\\\________________________\/\\\_____/\\\\\\\\\\\\\__\/////\\\///__" />
-              <ConsoleLine ascii message="  _\//\\\______/\\\_____________/\\\________\/\\\____/\\\/////////\\\_____\/\\\_____" />
-              <ConsoleLine ascii message="   __\//\\\____/\\\___/\\\\\____\///_________\/\\\___\/\\\_______\/\\\_____\/\\\_____" />
-              <ConsoleLine ascii message="    ___\//\\\__/\\\__/\\\///\\\___/\\\___/\\\\\\\\\___\/\\\\\\\\\\\\\\\_____\/\\\_____" />
-              <ConsoleLine ascii message="     ____\//\\\/\\\__/\\\__\//\\\_\/\\\__/\\\////\\\___\/\\\/////////\\\_____\/\\\_____" />
-              <ConsoleLine ascii message="      _____\//\\\\\__\//\\\__/\\\__\/\\\_\/\\\__\/\\\___\/\\\_______\/\\\_____\/\\\_____" />
-              <ConsoleLine ascii message="       ______\//\\\____\///\\\\\/___\/\\\_\//\\\\\\\/\\__\/\\\_______\/\\\__/\\\\\\\\\\\_" />
-              <ConsoleLine ascii message="        _______\///_______\/////_____\///___\///////\//___\///________\///__\///////////_" /><br/>
+            <ConsoleLine ascii message=" _    __      _     ________                    _             _____    ____" />
+            <ConsoleLine ascii message="| |  / /___  (_)___/ /_  __/__  _________ ___  (_)___  ____ _/ /   |  /  _/" />
+            <ConsoleLine ascii message="| | / / __ \/ / __  / / / / _ \/ ___/ __ `__ \/ / __ \/ __ `/ / /| |  / /  " />
+            <ConsoleLine ascii message="| |/ / /_/ / / /_/ / / / /  __/ /  / / / / / / / / / / /_/ / / ___ |_/ /   " />
+            <ConsoleLine ascii message="|___/\____/_/\__,_/ /_/  \___/_/  /_/ /_/ /_/_/_/ /_/\__,_/_/_/  |_/___/" /><br/>
               <ConsoleLine ascii message="                             Void Terminal AI, All Rights Reserved"/>
 
             

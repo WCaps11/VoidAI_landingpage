@@ -13,7 +13,11 @@ import ConsoleLine_What from './ConsoleLine_What'
 import ConsoleLine_Tokenomics from './ConsoleLine_Tokenomics'
 import ConsoleLine_Howtobuy  from './ConsoleLine_Howtobuy'
 
-export default function CommandBox() {
+
+import closebutton from '../assets/close.png'
+//import spacebackground from '../assets/spacebackground.png'
+import blackhole from '../assets/consolebg3.gif'
+export default function CommandBox({ handletoggleSound1}) {
 
 
 
@@ -46,6 +50,10 @@ export default function CommandBox() {
     }, 3000);
   }
 
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   const handleKeyPress = (event) => {
 
 
@@ -53,7 +61,17 @@ export default function CommandBox() {
 
         if(inputvalue.trim() == "clear"){
           setActions([""]);
-        }else{
+        }else if(inputvalue.trim() == "sound on"){
+            handletoggleSound1(true);
+            setActions([""]);
+
+        }
+        else if(inputvalue.trim() == "sound off"){
+          handletoggleSound1(false);
+          setActions([""]);
+
+      }        
+        else{
           setActions([inputvalue.trim()]);
      //     setActions((prevItems) => [...prevItems, inputvalue.trim()]);
 
@@ -92,8 +110,6 @@ export default function CommandBox() {
           setInputValue(actionhistory[temp]);
         }
     
-
-
       }
   };
 
@@ -108,51 +124,67 @@ export default function CommandBox() {
   return (
     <div className='container-main'>
 
+
+          <img src={blackhole} /> 
+
  
-      <Banner_SlantRelief/>
-
-      <div className='consolebox'>
-        
-        <div className='consoleoutput'> 
-
-        <ConsoleLine_Intro />
-        <ConsoleLine_Help />
-
-        {actions.map((item ,key) => (
-
-              item.toLowerCase() === "what" ? (
-                <ConsoleLine_What key={key}  command={item}/>
-              ) : item.toLowerCase() === "why" ? (
-                <ConsoleLine_Why key={key} command={item}/>
-              ) :item.toLowerCase() === "roadmap" ? (
-                <ConsoleLine_Multiline key={key} content={"roadmap"} command={item}/>
-              ) : item.toLowerCase() === "socials" ? (
-                <ConsoleLine_Links key={key} command={item}/>
-              ) : item.toLowerCase() === "twitter" ? (
-                <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
-              ) : item.toLowerCase() === "twitter" ? (
-                <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
-              ) :item.toLowerCase() === "tokenomics" ? (
-                <ConsoleLine_Tokenomics key={key}  command={item}/>
-              ) :item.toLowerCase() === "howtobuy" ? (
-                <ConsoleLine_Howtobuy key={key}  command={item}/>
-              ) :item.toLowerCase() !== "" ? (
-                <ConsoleLine_Unknown command={item}/>
-              ) :    
-              (
-                <div key={key}></div>
-              )
-
-        ))}
-
+     <div className='consolewindow'>
+      <div className='consoleheader'>
+        <div>
+          <h3>Void Terminal AI</h3>
         </div>
-
-        <div className='consoleprompt'>
-          <span>guest@voidAI.com:-{'> '}</span> <input type='text' value={inputvalue} onChange={handleInputChange} onKeyDown={handleKeyPress}/>
-        </div>
-
         
-      </div>
+        
+        <div> <img src={closebutton} onClick={handleRefresh}/> </div>
+         </div>
+
+
+
+     <Banner_SlantRelief/>
+
+<div className='consolebox'>
+  
+  <div className='consoleoutput'> 
+
+  <ConsoleLine_Intro />
+  <ConsoleLine_Help />
+
+  {actions.map((item ,key) => (
+
+        item.toLowerCase() === "what" ? (
+          <ConsoleLine_What key={key}  command={item}/>
+        ) : item.toLowerCase() === "why" ? (
+          <ConsoleLine_Why key={key} command={item}/>
+        ) :item.toLowerCase() === "roadmap" ? (
+          <ConsoleLine_Multiline key={key} content={"roadmap"} command={item}/>
+        ) : item.toLowerCase() === "socials" ? (
+          <ConsoleLine_Links key={key} command={item}/>
+        ) : item.toLowerCase() === "twitter" ? (
+          <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
+        ) : item.toLowerCase() === "twitter" ? (
+          <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
+        ) :item.toLowerCase() === "tokenomics" ? (
+          <ConsoleLine_Tokenomics key={key}  command={item}/>
+        ) :item.toLowerCase() === "howtobuy" ? (
+          <ConsoleLine_Howtobuy key={key}  command={item}/>
+        ) :item.toLowerCase() !== "" ? (
+          <ConsoleLine_Unknown command={item}/>
+        ) :    
+        (
+          <div key={key}></div>
+        )
+
+  ))}
+
+  </div>
+
+  <div className='consoleprompt'>
+    <span>guest@voidAI.com:-{'> '}</span> <input type='text' value={inputvalue} onChange={handleInputChange} onKeyDown={handleKeyPress}/>
+  </div>
+
+  
+</div>
+     </div>
 
     </div>
 

@@ -8,15 +8,14 @@ import sound from  "../assets/space_8bit.mp3"
 import blackhole from '../assets/My Video.gif'
 import { useEffect , useState } from 'react';
 
-export default function Page_Starting({setShowStartingHandler}) {
+export default function Page_Starting({setShowStartingHandler , handletoggleSound}) {
 
-  const thesound = new Audio(sound)
-  thesound.loop = true; 
+
 
     const [visible, setVisible] = useState(true);
     const [fading, setFading] = useState(false);
   const Playsound = ()=>{
-    thesound.play();
+    handletoggleSound(true);
     setFading(true); 
 
   };

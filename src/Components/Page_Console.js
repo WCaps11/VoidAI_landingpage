@@ -7,14 +7,14 @@ import { useEffect , useState } from 'react';
 
 
 
-export default function Page_Console() {
+export default function Page_Console({handletoggleSound}) {
 
 
   return (
     <div>
 
 
-        <CommandBox/>
+        <CommandBox  handletoggleSound1={handletoggleSound}/>
     </div>
   )
 }
