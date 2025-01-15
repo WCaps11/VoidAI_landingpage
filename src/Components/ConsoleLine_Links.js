@@ -19,7 +19,7 @@ export default function ConsoleLine_Links({command}) {
 
                     </div>
                     <div className='col-md-1'>
-                        <a  href='https://web.telegram.org' target='_blank'>telegram</a>
+                        <a  href='https://t.me/VoidTerminalAI' target='_blank'>telegram</a>
 
                     </div>
                 </div>

@@ -46,7 +46,7 @@ export default function CommandBox({ handletoggleSound1}) {
 
   const goTelegram= ()=>{
     const timer = setTimeout(() => {
-      window.open("https://web.telegram.org", "_blank"); // Opens the URL in a new tab
+      window.open("https://t.me/VoidTerminalAI", "_blank"); // Opens the URL in a new tab
     }, 3000);
   }
 
