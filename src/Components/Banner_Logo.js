@@ -12,7 +12,7 @@ export default function Banner_Logo() {
         <div className='banner bannerscale'>
     
         <ConsoleLine ascii message="" />
-<ConsoleLine ascii message=" "/><br/><br/><br/><br/>
+<ConsoleLine ascii message=" "/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <ConsoleLine ascii message="                                                                      ..;===+." />
 <ConsoleLine ascii message="                                                                  .:=iiiiii=+=" />
 <ConsoleLine ascii message="                                                               .=i))=;::+)i=+," />
