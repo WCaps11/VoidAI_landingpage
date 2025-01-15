@@ -31,7 +31,7 @@ export default function ConsoleLine_Tokenomics({content ,  command}) {
       
         },[waiting]);
 
-        const prompt = "guest@VoidTerminalAI.io:->" + command
+        const prompt = "guest@VoidTerminalAI:->" + command
     
      return (
        <>

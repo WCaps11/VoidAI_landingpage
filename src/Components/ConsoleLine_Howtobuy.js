@@ -31,7 +31,7 @@ export default function ConsoleLine_Howtobuy({content ,  command}) {
       
         },[waiting]);
 
-        const prompt = "guest@VoidTerminalAI.io:->" + command
+        const prompt = "guest@VoidTerminalAI:->" + command
     
     return (
       <>

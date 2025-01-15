@@ -39,14 +39,14 @@ export default function CommandBox({ handletoggleSound1}) {
 
   const goTwitter= ()=>{
     const timer = setTimeout(() => {
-      window.open("https://x.com/VoidTerminalAI.io", "_blank"); // Opens the URL in a new tab
+      window.open("https://x.com/VoidTerminalAI", "_blank"); // Opens the URL in a new tab
     }, 3000);
   }
 
 
   const goTelegram= ()=>{
     const timer = setTimeout(() => {
-      window.open("https://t.me/VoidTerminalAI.io", "_blank"); // Opens the URL in a new tab
+      window.open("https://t.me/VoidTerminalAI", "_blank"); // Opens the URL in a new tab
     }, 3000);
   }
 
@@ -179,7 +179,7 @@ export default function CommandBox({ handletoggleSound1}) {
   </div>
 
   <div className='consoleprompt'>
-    <span>guest@VoidTerminalAI.io.io:-{'> '}</span> <input type='text' value={inputvalue} onChange={handleInputChange} onKeyDown={handleKeyPress}/>
+    <span>guest@VoidTerminalAI:-{'> '}</span> <input type='text' value={inputvalue} onChange={handleInputChange} onKeyDown={handleKeyPress}/>
   </div>
 
   
