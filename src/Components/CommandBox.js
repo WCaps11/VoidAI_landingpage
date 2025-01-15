@@ -35,7 +35,7 @@ export default function CommandBox() {
 
   const goTwitter= ()=>{
     const timer = setTimeout(() => {
-      window.open("https://x.com/?lang=en&mx=2", "_blank"); // Opens the URL in a new tab
+      window.open("https://x.com/VoidTerminalAI", "_blank"); // Opens the URL in a new tab
     }, 3000);
   }
 
