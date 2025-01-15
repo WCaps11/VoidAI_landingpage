@@ -5,7 +5,7 @@ export default function ConsoleLine_Links({command}) {
 
 
 
-    const prompt = "guest@VoidTerminalAI.io.com:->" + command
+    const prompt = "guest@VoidTerminalAI.io:->" + command
   return (
     <>
        <ConsoleLine_Prompt message={prompt}/>

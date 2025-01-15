@@ -31,7 +31,7 @@ export default function ConsoleLine_Multiline({content ,  command}) {
   },[waiting]);
 
 
-  const prompt = "guest@VoidTerminalAI.io.com:->" + command
+  const prompt = "guest@VoidTerminalAI.io:->" + command
 
   return (
     <>
