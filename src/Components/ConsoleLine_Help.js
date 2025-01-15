@@ -22,7 +22,7 @@ export default class ConsoleLine_Help extends Component {
                     <ConsoleLine message="  "/>
                     <ConsoleLine message="Features:"/>
                     <ConsoleLine message="Terminal Game - Coming Soon"/>
-                    <ConsoleLine message="TerminalBox - Coming Soon"/>
+                    <ConsoleLine message="TerminalChat - Coming Soon"/>
                     <ConsoleLine message="TerminalAI - Coming Soon"/>
 
 
