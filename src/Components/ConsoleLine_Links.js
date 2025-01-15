@@ -15,7 +15,7 @@ export default function ConsoleLine_Links({command}) {
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-1'>
-                        <a  href='https://x.com/?lang=en&mx=2' target='_blank'>twitter</a>
+                        <a  href='https://x.com/VoidTerminalAI' target='_blank'>twitter</a>
 
                     </div>
                     <div className='col-md-1'>
