@@ -124,8 +124,13 @@ export default function CommandBox({ handletoggleSound1}) {
   return (
     <div className='container-main'>
 
+      <div className='blackhole2'>
+      <img src={blackhole} /> 
+        
+      </div>
 
-          <img src={blackhole} /> 
+
+         
 
  
      <div className='consolewindow'>
