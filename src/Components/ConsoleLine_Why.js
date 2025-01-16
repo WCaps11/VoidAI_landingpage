@@ -33,7 +33,7 @@ export default function ConsoleLine_Why({content ,  command}) {
       
         },[waiting]);
 
-        const prompt = "guest@voidAI.com:->" + command
+        const prompt = "guest@VoidTerminalAI:->" + command
     
    return (
      <>
