@@ -50,6 +50,13 @@ export default function CommandBox({ handletoggleSound1}) {
     }, 3000);
   }
 
+  const goBuy =()=> {
+
+    const timer = setTimeout(() => {
+      window.open("https://www.youtube.com", "_blank"); // Opens the URL in a new tab
+    }, 3000);
+  }
+
   const handleRefresh = () => {
     window.location.reload();
   };
@@ -79,7 +86,11 @@ export default function CommandBox({ handletoggleSound1}) {
               goTwitter();
           }else if(inputvalue.toLowerCase().trim() === "telegram"){
               goTelegram();
-          }
+          }else if(inputvalue.toLowerCase().trim() === "buy"){
+            goBuy();
+        }
+
+          
         }
         setActionHistory((prevItems2) => [...prevItems2, inputvalue.trim()]);
         setHistoryIndex(actionhistory.length +1)
@@ -168,7 +179,9 @@ export default function CommandBox({ handletoggleSound1}) {
           <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
         ) : item.toLowerCase() === "twitter" ? (
           <ConsoleLine_Multiline key={key} content={"Opening...... X"} command={item}/>
-        ) :item.toLowerCase() === "tokenomics" ? (
+        ) : item.toLowerCase() === "buy" ? (
+          <ConsoleLine_Multiline key={key} content={"Opening......"} command={item}/>
+        ):item.toLowerCase() === "tokenomics" ? (
           <ConsoleLine_Tokenomics key={key}  command={item}/>
         ) :item.toLowerCase() === "howtobuy" ? (
           <ConsoleLine_Howtobuy key={key}  command={item}/>
