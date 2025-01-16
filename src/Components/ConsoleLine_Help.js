@@ -19,8 +19,7 @@ export default class ConsoleLine_Help extends Component {
                     <ConsoleLine title="buy" message="Buy"/>
                     <ConsoleLine title="roadmap" message="View Roadmap"/>
                     <ConsoleLine title="clear" message="clear console"/>
-                    <ConsoleLine title="sound on" message=""/>
-                    <ConsoleLine title="sound off" message=""/>
+                    <ConsoleLine title="sound on/off" message=""/>
                     <ConsoleLine message="  "/>
                     <ConsoleLine message="Features:"/>
                     <ConsoleLine message="Terminal Game - Coming Soon"/>
